@@ -29,6 +29,7 @@ cd ../docker/
 sudo docker build -t devops_pipeline_demo .
 
 
+#!/bin/sh "
 CONTAINER=devops_pipeline_demo
  
 RUNNING=$(sudo docker inspect --format="{{ .State.Running }}" $CONTAINER 2> /dev/null)
